@@ -1,0 +1,33 @@
+@charset 'utf-8';
+.wrapper{
+  background-image: url('../skateboard-images/bg.jpg')
+}
+
+.row {
+  img{
+    width: 100%;
+  }
+}
+
+.image{
+  border: 6px;
+  border-color: white;
+}
+
+.row{
+  position: relative;
+  .logo{
+    position: absolute;
+    float:left;
+  }
+}
+
+.top-image {
+  height: 336px;
+  overflow: hidden;
+}
+
+.tommy {
+  height: 463px;
+  overflow: hidden;
+}

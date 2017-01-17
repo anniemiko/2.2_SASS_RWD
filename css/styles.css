@@ -1,3 +1,25 @@
+.wrapper {
+  background-image: url("../skateboard-images/bg.jpg"); }
 
+.row img {
+  width: 100%; }
+
+.image {
+  border: 6px;
+  border-color: white; }
+
+.row {
+  position: relative; }
+  .row .logo {
+    position: absolute;
+    float: left; }
+
+.top-image {
+  height: 336px;
+  overflow: hidden; }
+
+.tommy {
+  height: 463px;
+  overflow: hidden; }
 
 /*# sourceMappingURL=styles.css.map */
