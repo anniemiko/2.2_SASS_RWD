@@ -3,6 +3,45 @@
   background-image: url('../skateboard-images/bg.jpg')
 }
 
+.subscribe{
+  color: white;
+  display: inline-block;
+  text-align: right;
+}
+.social-nav{
+  text-align: right;
+  display: inline-block;
+  i {
+    padding: 15px;
+    color: white;
+    font-size: 30px;
+    opacity: 20%;
+    }
+}
+
+.social-nav{
+  .fa-facebook {
+    background-color: #465299;
+  }
+  .fa-rss{
+    background-color: #D38E1C;
+  }
+  .fa-twitter{
+    background-color: #6889C9;
+  }
+  .fa-youtube{
+    background-color: #BF151C;
+  }
+}
+.nav{
+  font-size: 14px;
+  color: white;
+  background-color: #C1001D;
+  text-align: center;
+  padding: 14px;
+  margin-bottom: 10px;
+}
+
 .row {
   img{
     width: 100%;
@@ -14,12 +53,12 @@
   border-color: white;
 }
 
-.row{
-  position: relative;
-  .logo{
+.logo{
+  img{
     position: absolute;
-    float:left;
-  }
+    float: left;
+    width: 411px;
+    }
 }
 
 .top-image {
@@ -30,4 +69,28 @@
 .tommy {
   height: 463px;
   overflow: hidden;
+}
+
+.box{
+  background-color: #FDFDFD;
+  color: #363732;
+
+  h1{
+    font-size: 18px;
+  }
+  p {
+    font-size: 10px;
+  }
+  a {
+    color: #BB0017;
+    text-align: center;
+  }
+}
+
+.boards{
+  background-color: white;
+  img {
+    padding: 20px;
+    width: 9%;
+  }
 }
