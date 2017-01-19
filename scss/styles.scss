@@ -15,6 +15,10 @@ body{
   background-size: cover;
 }
 
+// .container{
+//   margin-bottom: 95px;
+// }
+
 .subscribe{
   color: white;
   display: inline-block;
@@ -27,9 +31,6 @@ body{
   padding-left: 11px;
 }
 .social-nav{
-  // position: relative;
-  // right: 0;
-  // display: inline-block;
   text-align: right;
   vertical-align: middle;
   margin-bottom: 15px;
@@ -43,7 +44,9 @@ body{
 
   a{
     color: #FFF;
+    cursor: pointer;
   }
+
   .fa-facebook {
     background-color: #465299;
   }
@@ -66,10 +69,12 @@ body{
   padding: 14px;
   margin-bottom: 10px;
 }
+
 a{
   text-decoration: none;
   color: #FFF;
 }
+
 .header{
   background-image: url('../skateboard-images/top-image.png');
   border: 6px solid #FFF;
@@ -77,18 +82,18 @@ a{
   height: 336px;
   background-position: -100px -151px;
   overflow: hidden;
-  @media screen and (min-width: 768px){
-    width: 100%;
+  @media (max-width: 768px){
+    height: 336px;
   }
 }
 
 .overlay{
   background-image: url('../skateboard-images/grid.png');
-  overflow: hidden;
   height: 330px;
   width: 100%;
   opacity: 0.4;
   position: absolute;
+  overflow: hidden;
 }
 
 .logo{
@@ -107,21 +112,44 @@ a{
     margin: 5px;
   }
 }
-.skaters {
-  border: 6px solid #FFF;
-  margin-bottom: 10px;
-  @media screen and (min-width: 768px){
-    .skaters{
-      width: 100%;
-    }
+
+.box{
+  background-color: #FDFDFD;
+  min-height: 350px;
+  margin-bottom: 35px;
+  padding: 14px 28px;
+  position: relative;
+  .date{
+    color: #B4B4B4;
+    margin: 23px 0;
   }
+  h1{
+    font-size: 26px;
+    color: #31342D;
+  }
+  p {
+    font-size: 12px;
+    color: #31342D;
+    text-align: justify;
+  }
+}
+
+.read{
+  a {
+    color: #BB0017;
+    font-weight: 800;
+  }
+  position: absolute;
+  top: 320px;
+  left: 135px;
 }
 
 .lance{
   background-image: url('../skateboard-images/sk8er-4.png');
-  background-position: -80px -12px;
+  @media (min-width: 992px){
+    background-position: -80px -12px;
+  }
   height: 221px;
-  background-repeat: no-repeat;
 }
 
 .rodney{
@@ -141,8 +169,21 @@ a{
 .tommy {
   background-image: url('../skateboard-images/sk8er-2.png');
   overflow: hidden;
+  height: 221px;
+  @media (min-width: 992px){
   background-position: 472px 1px;
   height: 469px;
+  }
+}
+
+.skaters {
+  border: 6px solid #FFF;
+  margin-bottom: 10px;
+  @media (max-width: 991px){
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+  }
 }
 
 .sk8name {
@@ -155,36 +196,6 @@ a{
   vertical-align: middle;
   line-height: 1;
   margin-top: 30px;
-}
-
-.box{
-  background-color: #FDFDFD;
-  min-height: 350px;
-  margin-bottom: 35px;
-  padding: 14px 28px;
-  position: relative;
-  .date{
-    color: #B4B4B4;
-  }
-  h1{
-    font-size: 26px;
-    color: #31342D;
-  }
-  p {
-    font-size: 12px;
-    color: #31342D;
-    text-align: justify;
-  }
-  a {
-    color: #BB0017;
-    font-weight: 800;
-  }
-}
-
-.read{
-  text-align: center;
-  position: relative;
-  bottom: -50px;
 }
 
 .boards{
@@ -200,23 +211,30 @@ a{
   height: 360px;
   background-color: white;
   margin-top: 20px;
-  button{
-    background-color: red;
-    text-align: center;
-    width: 250px;
-    color: #FFF;
-  }
 }
 
-.form-group{
-  margin-top: 30px;
+.contact-text{
+  margin: 30px;
 }
+
 .social-bottom{
-  margin-top: 5px;
+  margin-top: 20px;
   a {
     padding: 5px;
     color: white;
     font-size: 15px;
     background-color: #7B7B7B;
+    cursor: pointer;
+  }
+}
+
+.contact-input{
+  margin: 30px;
+  button{
+    background-color: red;
+    text-align: center;
+    width: 250px;
+    color: #FFF;
+    margin-top: 28px;
   }
 }
