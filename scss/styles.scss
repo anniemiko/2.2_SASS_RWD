@@ -19,12 +19,20 @@ body{
   color: white;
   display: inline-block;
   text-align: right;
+  padding-right: 95px;
+  border-right: 3px dotted #FFF;
+  line-height: 2;
+}
+.social-media{
+  padding-left: 11px;
 }
 .social-nav{
   // position: relative;
   // right: 0;
   // display: inline-block;
   text-align: right;
+  vertical-align: middle;
+  margin-bottom: 15px;
   i {
     padding: 15px;
     color: white;
@@ -35,7 +43,6 @@ body{
 
   a{
     color: #FFF;
-    // border-right: 2px dotted #FFF;
   }
   .fa-facebook {
     background-color: #465299;
@@ -59,7 +66,10 @@ body{
   padding: 14px;
   margin-bottom: 10px;
 }
-
+a{
+  text-decoration: none;
+  color: #FFF;
+}
 .header{
   background-image: url('../skateboard-images/top-image.png');
   border: 6px solid #FFF;
@@ -67,6 +77,9 @@ body{
   height: 336px;
   background-position: -100px -151px;
   overflow: hidden;
+  @media screen and (min-width: 768px){
+    width: 100%;
+  }
 }
 
 .overlay{
@@ -97,12 +110,18 @@ body{
 .skaters {
   border: 6px solid #FFF;
   margin-bottom: 10px;
+  @media screen and (min-width: 768px){
+    .skaters{
+      width: 100%;
+    }
+  }
 }
 
 .lance{
   background-image: url('../skateboard-images/sk8er-4.png');
   background-position: -80px -12px;
   height: 221px;
+  background-repeat: no-repeat;
 }
 
 .rodney{
@@ -143,7 +162,6 @@ body{
   min-height: 350px;
   margin-bottom: 35px;
   padding: 14px 28px;
-  text-align: justify;
   position: relative;
   .date{
     color: #B4B4B4;
@@ -155,6 +173,7 @@ body{
   p {
     font-size: 12px;
     color: #31342D;
+    text-align: justify;
   }
   a {
     color: #BB0017;
@@ -180,14 +199,24 @@ body{
 .contact-box{
   height: 360px;
   background-color: white;
-  .contact{
-    margin: 30px 10px 30px 10px;
-  }
-  form{
-    margin: 30px 10px 30px 10px;
-  }
+  margin-top: 20px;
   button{
     background-color: red;
-    text-align: right;
+    text-align: center;
+    width: 250px;
+    color: #FFF;
+  }
+}
+
+.form-group{
+  margin-top: 30px;
+}
+.social-bottom{
+  margin-top: 5px;
+  a {
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    background-color: #7B7B7B;
   }
 }

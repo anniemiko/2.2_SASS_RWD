@@ -16,17 +16,19 @@
       <div>
         <div class="social-nav clearfix">
           <a class="subscribe">Subscribe &#9679</a>
-          <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-          <a href="https://www.rss.com/"><i class="fa fa-rss" aria-hidden="true"></i></a>
-          <a href="https://twitter.com/Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+          <span class='social-media'>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.rss.com/"><i class="fa fa-rss" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+          </span>
         </div>
       </div>
       <ul class="nav">
-        <li class="col-md-3"><div class='menu'>SKBT NEWS</div></li>
-        <li class="col-md-3"><div class='menu'>SKATEBOARDERS</div></li>
-        <li class="col-md-3"><div class='menu'>BOARD DESIGN</div></li>
-        <li class="col-md-3"><div class='menu'>CONTACT US</div></li>
+        <li class="col-md-3"><div class='menu'><a href="#sk8news">SKBT NEWS</a></div></li>
+        <li class="col-md-3"><div class='menu'><a href="#skaters">SKATEBOARDERS</a></div></li>
+        <li class="col-md-3"><div class='menu'><a href="#boards">BOARD DESIGN</a></div></li>
+        <li class="col-md-3"><div class='menu'><a href="#InputName">CONTACT US</a></div></li>
       </ul>
 
       <div class="row">
@@ -48,7 +50,7 @@
 
       <div class="row">
         <div class="col-md-4">
-          <div class="box">
+          <div class="box" id="sk8news">
             <h1>Tony Hawk Foundation Raises Big Money at Celeb Fundraiser</h1>
             <div class="date">October 10, 2013</div>
             <p>It was just over 90 degrees in Los Angeles, but that didn't stop the throngs from coming out to celebrate the 10th Annual Tony Hawk's Stand Up For Skateparks Benefit presented by SLS Hotel &amp Casino Las Vegas on Saturday at the Green Acres Estate in Beverly Hills.</p>
@@ -59,7 +61,7 @@
           <div class="box">
             <h1>Rodney Mullen: Pop an ollie and innovate! (TED Talk)</h1>
             <div class="date">March 10, 2013</div>
-            <p>The last thin Rodney Mullen, the godfather of street skating,wanted were competitive vistories. In this exuberant talk he shares his love of the open skateboarding community and how the unique environments it plays in drive the creation of new tricks -- fostering...</p>
+            <p>The last thing Rodney Mullen, the godfather of street skating, wanted were competitive victories. In this exuberant talk he shares his love of the open skateboarding community and how the unique environments it plays in drive the creation of new tricks -- fostering...</p>
             <div class='read'><a href="https://www.ted.com/talks/rodney_mullen_pop_an_ollie_and_innovate">[ READ MORE ]</a></div>
           </div>
         </div>
@@ -77,7 +79,7 @@
 
           <div class="col-md-8">
 
-            <div class="row">
+            <div class="row" id='skaters'>
 
               <div class="col-md-6">
                 <div class="skaters lance">
@@ -108,7 +110,7 @@
           </div>
       </div>
 
-      <div class="boards col-md-12">
+      <div class="boards col-md-12" id='boards'>
         <img src="skateboard-images/sk8-3.png" alt="">
         <img src="skateboard-images/sk8-4.png" alt="">
         <img src="skateboard-images/sk8-5.png" alt="">
@@ -128,6 +130,12 @@
               <h2>Contact Us for More Information</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laborum.</p>
             </div>
+            <div class='social-bottom'>
+              <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://www.rss.com/"><i class="fa fa-rss" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            </div>
           </div>
           <form class="col-md-6">
             <div class="form-group">
@@ -137,7 +145,7 @@
               <input type="email" class="form-control" id="InputEmail" placeholder="Email">
             </div>
             <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="submit" class="btn btn-default col-md-offset-6">SUBMIT</button>
           </form>
         </div>
       </div>
